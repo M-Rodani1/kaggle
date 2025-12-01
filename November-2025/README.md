@@ -1,4 +1,4 @@
-# Loan Default Prediction | Kaggle Playground Series (November 2024)
+# Loan Default Prediction | Kaggle Playground Series (November 2025)
 
 **Competition:** [Playground Series S5E11 - Loan Default Prediction](https://www.kaggle.com/competitions/playground-series-s5e11)  
 **Final Result:** Top 25% finish (Rank #950 / 3,850 participants) | **AUC: 0.92450**  
