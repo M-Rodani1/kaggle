@@ -1,2 +1,1 @@
-# Kaggle Competition Portfolio:
-
+# Kaggle Competition Portfolio
