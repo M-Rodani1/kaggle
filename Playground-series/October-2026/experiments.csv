@@ -1,0 +1,73 @@
+experiment,model,n_features,fold_scores,oof_score,delta_vs_baseline,folds_improved,minutes,fold_seed,notes,public_lb,logged_at,device
+exp00_baseline,LightGBM,21.0,0.95905 0.95773 0.95959 0.95890 0.95913,0.95886,,,1.4,42,,,2026-10-02 12:49,
+exp00_baseline,CatBoost,21.0,0.95857 0.95735 0.95936 0.95851 0.95871,0.9585,,,11.8,42,,,2026-10-02 12:49,
+exp00_baseline,Blend,21.0,0.95917 0.95785 0.95978 0.95902 0.95919,0.95899,,,0.0,42,"LightGBM 0.69, CatBoost 0.31",,2026-10-02 12:49,
+exp01_features,LightGBM,36.0,0.95887 0.95760 0.95921 0.95859 0.95901,0.95864,-0.00022,0.0,1.3,42,,,2026-10-02 14:03,
+exp01_features,CatBoost,36.0,0.95830 0.95724 0.95919 0.95835 0.95864,0.95834,-0.00016,0.0,9.8,42,,,2026-10-02 14:03,
+exp01_features,Blend,36.0,0.95901 0.95776 0.95948 0.95875 0.95909,0.95881,-0.00018,0.0,0.0,42,"LightGBM 0.66, CatBoost 0.34",,2026-10-02 14:03,
+exp02_original,LightGBM,21.0,0.95895 0.95758 0.95928 0.95847 0.95900,0.95865,-0.00021,0.0,4.5,42,,,2026-10-09 22:31,
+exp02_original,CatBoost,21.0,0.95849 0.95716 0.95904 0.95827 0.95859,0.9583,-0.0002,0.0,15.9,42,,,2026-10-09 22:31,
+exp02_original,Blend,21.0,0.95908 0.95765 0.95943 0.95862 0.95911,0.95877,-0.00022,0.0,0.0,42,"LightGBM 0.70, CatBoost 0.30",,2026-10-09 22:31,
+exp03_tuned,LightGBM,21.0,0.95988 0.95830 0.96033 0.95964 0.95958,0.95954,0.00068,5.0,4.6,42,,,2026-10-09 23:19,
+exp03_tuned,CatBoost,21.0,0.95857 0.95735 0.95936 0.95851 0.95871,0.9585,-0.0,3.0,20.1,42,,,2026-10-09 23:19,
+exp03_tuned,Blend,21.0,0.95989 0.95833 0.96039 0.95966 0.95961,0.95957,0.00058,5.0,0.0,42,"LightGBM 0.86, CatBoost 0.14",0.95888,2026-10-09 23:19,
+exp04_xgb_seeds,LightGBM,21.0,0.96008 0.95845 0.96044 0.95983 0.95988,0.95973,0.00087,5.0,13.7,42,,,2026-10-10 00:46,
+exp04_xgb_seeds,XGBoost,21.0,0.95943 0.95805 0.96008 0.95938 0.95941,0.95926,,,8.0,42,,,2026-10-10 00:46,
+exp04_xgb_seeds,CatBoost,21.0,0.95857 0.95735 0.95936 0.95851 0.95871,0.9585,-0.0,3.0,0.0,42,,,2026-10-10 00:46,
+exp04_xgb_seeds,Blend,21.0,0.96006 0.95846 0.96048 0.95983 0.95988,0.95974,0.00075,5.0,0.0,42,"LightGBM 0.88, XGBoost 0.08, CatBoost 0.04",0.95896,2026-10-10 00:46,
+exp05_lgb_wide,LightGBM,21.0,0.96034 0.95896 0.96100 0.96016 0.96016,0.96012,0.00126,5.0,35.1,42,,,2026-10-10 20:38,
+exp05_lgb_wide,XGBoost,21.0,0.95943 0.95805 0.96008 0.95938 0.95941,0.95926,,,0.0,42,,,2026-10-10 20:38,
+exp05_lgb_wide,CatBoost,21.0,0.95857 0.95735 0.95936 0.95851 0.95871,0.9585,-0.0,3.0,0.0,42,,,2026-10-10 20:38,
+exp05_lgb_wide,Blend,21.0,0.96036 0.95896 0.96102 0.96019 0.96018,0.96014,0.00115,5.0,0.0,42,"LightGBM 0.86, XGBoost 0.14, CatBoost 0.00",0.95942,2026-10-10 20:38,
+exp06_nn,LightGBM,21.0,0.96034 0.95896 0.96100 0.96016 0.96016,0.96012,0.00126,5.0,0.0,42,,,2026-10-10 14:14,reused exp05_lgb_wide
+exp06_nn,XGBoost,21.0,0.95943 0.95805 0.96008 0.95938 0.95941,0.95926,,,0.0,42,,,2026-10-10 14:14,reused exp04_xgb_seeds
+exp06_nn,NN,21.0,0.95788 0.95706 0.95874 0.95783 0.95820,0.95788,,,7.4,42,,,2026-10-10 14:14,cuda
+exp06_nn,Blend,21.0,0.96041 0.95910 0.96109 0.96023 0.96022,0.9602,0.00121,5.0,0.0,42,"LightGBM 0.80, XGBoost 0.02, NN 0.18",0.95946,2026-10-10 14:14,
+exp07_nn_bins,LightGBM,21.0,0.96034 0.95896 0.96100 0.96016 0.96016,0.96012,0.0,0.0,0.0,42,,,2026-10-11 19:08,reused exp05_lgb_wide
+exp07_nn_bins,XGBoost,21.0,0.95943 0.95805 0.96008 0.95938 0.95941,0.95926,0.0,0.0,0.0,42,,,2026-10-11 19:08,reused exp04_xgb_seeds
+exp07_nn_bins,NN,21.0,0.95863 0.95756 0.95940 0.95841 0.95871,0.95852,0.00064,5.0,14.3,42,,,2026-10-11 19:08,mps
+exp07_nn_bins,Blend,21.0,0.96047 0.95911 0.96112 0.96021 0.96029,0.96023,3e-05,4.0,0.0,42,"LightGBM 0.74, XGBoost 0.00, NN 0.26",0.95954,2026-10-11 19:08,
+exp08_refit,LightGBM,21.0,0.96034 0.95896 0.96100 0.96016 0.96016,0.96012,0.0,0.0,0.0,42,,,2026-10-11 19:50,reused exp05_lgb_wide
+exp08_refit,XGBoost,21.0,0.95943 0.95805 0.96008 0.95938 0.95941,0.95926,0.0,0.0,0.0,42,,,2026-10-11 19:50,reused exp04_xgb_seeds
+exp08_refit,NN,21.0,0.95863 0.95756 0.95940 0.95841 0.95871,0.95852,-0.0,0.0,0.0,42,,,2026-10-11 19:50,reused exp07_nn_bins
+exp08_refit,Blend,21.0,0.96047 0.95911 0.96112 0.96021 0.96029,0.96023,0.0,0.0,0.0,42,"LightGBM 0.74, XGBoost 0.00, NN 0.26 | refit: LightGBM 5x3984 trees, NN 3x14 epochs",0.95962,2026-10-11 19:50,
+exp09_orig_lookup,LightGBM,45.0,0.96063 0.95938 0.96132 0.96057 0.96041,0.96046,0.00034,5.0,57.4,42,,,2026-10-11 22:04,cpu
+exp09_orig_lookup,XGBoost,45.0,0.96032 0.95887 0.96079 0.96008 0.95997,0.96001,0.00075,5.0,12.5,42,,,2026-10-11 22:04,cpu
+exp09_orig_lookup,NN,45.0,0.95955 0.95832 0.96027 0.95936 0.95948,0.95938,0.00086,5.0,11.5,42,,,2026-10-11 22:04,mps
+exp09_orig_lookup,Blend,45.0,0.96082 0.95950 0.96151 0.96068 0.96054,0.96061,0.00038,5.0,0.0,42,"LightGBM 0.71, XGBoost 0.00, NN 0.29 | refit: LightGBM 5x2148 trees, NN 3x14 epochs | public_lb is the refit file; fold-averaged scored 0.96011",0.96019,2026-10-11 22:04,
+exp10_catboost_cat,LightGBM,45.0,0.96063 0.95938 0.96132 0.96057 0.96041,0.96046,0.0,0.0,0.0,42,,,2026-10-12 18:50,reused exp09_orig_lookup
+exp10_catboost_cat,XGBoost,45.0,0.96032 0.95887 0.96079 0.96008 0.95997,0.96001,-0.0,0.0,0.0,42,,,2026-10-12 18:50,reused exp09_orig_lookup
+exp10_catboost_cat,CatBoost,45.0,0.96084 0.95962 0.96141 0.96106 0.96072,0.96072,,,53.8,42,,,2026-10-12 18:50,cpu
+exp10_catboost_cat,NN,45.0,0.95955 0.95832 0.96027 0.95936 0.95948,0.95938,-0.0,0.0,0.0,42,,,2026-10-12 18:50,reused exp09_orig_lookup
+exp10_catboost_cat,Blend,45.0,0.96119 0.95995 0.96178 0.96124 0.96096,0.96102,0.00041,5.0,0.0,42,"LightGBM 0.33, XGBoost 0.00, CatBoost 0.50, NN 0.17 | refit: LightGBM refit from exp09_orig_lookup, CatBoost 2280 trees, NN refit from exp09_orig_lookup | public_lb is the refit file; fold-averaged scored 0.96051",0.96068,2026-10-12 18:50,
+exp11_nn_exact,LightGBM,45.0,0.96063 0.95938 0.96132 0.96057 0.96041,0.96046,0.0,0.0,0.0,42,,,2026-10-12 21:28,reused exp09_orig_lookup
+exp11_nn_exact,XGBoost,45.0,0.96032 0.95887 0.96079 0.96008 0.95997,0.96001,-0.0,0.0,0.0,42,,,2026-10-12 21:28,reused exp09_orig_lookup
+exp11_nn_exact,CatBoost,45.0,0.96084 0.95962 0.96141 0.96106 0.96072,0.96072,0.0,0.0,0.0,42,,,2026-10-12 21:28,reused exp10_catboost_cat
+exp11_nn_exact,NN,45.0,0.96041 0.95937 0.96097 0.96035 0.96026,0.96026,0.00088,5.0,9.4,42,,,2026-10-12 21:28,mps
+exp11_nn_exact,Blend,45.0,0.96134 0.96013 0.96186 0.96136 0.96108,0.96115,0.00013,5.0,0.0,42,"LightGBM 0.27, XGBoost 0.00, CatBoost 0.43, NN 0.31 | refit: LightGBM refit from exp09_orig_lookup, CatBoost refit from exp10_catboost_cat, NN 3x14 epochs | public_lb is the refit file",0.96095,2026-10-12 21:28,
+exp12_seeds,LightGBM,45.0,0.96063 0.95938 0.96132 0.96057 0.96041,0.96046,0.0,0.0,0.0,42,,,2026-10-13 14:56,reused exp09_orig_lookup
+exp12_seeds,XGBoost,45.0,0.96032 0.95887 0.96079 0.96008 0.95997,0.96001,-0.0,0.0,0.0,42,,,2026-10-13 14:56,reused exp09_orig_lookup
+exp12_seeds,CatBoost,45.0,0.96084 0.95962 0.96141 0.96106 0.96072,0.96072,0.0,0.0,0.0,42,,,2026-10-13 14:56,reused exp10_catboost_cat
+exp12_seeds,CatBoostFast,45.0,0.96094 0.95954 0.96144 0.96105 0.96092,0.96077,,,98.6,42,,,2026-10-13 14:56,cpu
+exp12_seeds,NN,45.0,0.96072 0.95967 0.96128 0.96060 0.96055,0.96056,0.0003,5.0,14.7,42,,,2026-10-13 14:56,mps
+exp12_seeds,Blend,45.0,0.96143 0.96022 0.96195 0.96141 0.96124,0.96125,0.0001,5.0,0.0,42,"LightGBM 0.22, XGBoost 0.00, CatBoost 0.14, CatBoostFast 0.30, NN 0.35 | refit: LightGBM refit from exp09_orig_lookup, CatBoost refit from exp10_catboost_cat, CatBoostFast 2x973 trees, NN 5x14 epochs | public_lb is the refit file; fold-averaged scored 0.96084",0.96097,2026-10-13 14:56,
+exp13_nn_tuned_cb_orig,LightGBM,45.0,0.96063 0.95938 0.96132 0.96057 0.96041,0.96046,0.0,0.0,0.0,42,,,2026-10-13 18:31,reused exp09_orig_lookup
+exp13_nn_tuned_cb_orig,XGBoost,45.0,0.96032 0.95887 0.96079 0.96008 0.95997,0.96001,-0.0,0.0,0.0,42,,,2026-10-13 18:31,reused exp09_orig_lookup
+exp13_nn_tuned_cb_orig,CatBoost,45.0,0.96084 0.95962 0.96141 0.96106 0.96072,0.96072,0.0,0.0,0.0,42,,,2026-10-13 18:31,reused exp10_catboost_cat
+exp13_nn_tuned_cb_orig,CatBoostFast,45.0,0.96094 0.95954 0.96144 0.96105 0.96092,0.96077,0.0,0.0,0.0,42,,,2026-10-13 18:31,reused exp12_seeds
+exp13_nn_tuned_cb_orig,CatBoostOrig,45.0,0.96057 0.95960 0.96106 0.96061 0.96065,0.96049,,,19.8,42,,,2026-10-13 18:31,cpu
+exp13_nn_tuned_cb_orig,NN,45.0,0.96084 0.95978 0.96123 0.96066 0.96047,0.96059,3e-05,3.0,20.4,42,,,2026-10-13 18:31,mps
+exp13_nn_tuned_cb_orig,Blend,45.0,0.96149 0.96035 0.96197 0.96139 0.96126,0.96129,4e-05,4.0,0.0,42,"LightGBM 0.22, XGBoost 0.00, CatBoost 0.07, CatBoostFast 0.20, CatBoostOrig 0.20, NN 0.31 | refit: LightGBM refit from exp09_orig_lookup, CatBoost refit from exp10_catboost_cat, CatBoostFast refit from exp12_seeds, CatBoostOrig 1x958 trees, NN 5x18 epochs | public_lb is the refit file; fold-averaged scored 0.96084",0.961,2026-10-13 18:31,
+exp14_public_stack,Stack,247.0,0.96238 0.96142 0.96281 0.96245 0.96208,0.96222,0.00093,5.0,7.9,42,"public, blend family, C 0.003; n_features = stack members; nested OOF",0.96184,2026-10-13 18:59,cpu
+exp15_route_aux,LightGBM,79.0,0.96110 0.96017 0.96140 0.96089 0.96091,0.96089,0.00043,5.0,29.2,42,,,2026-10-16 02:55,cpu
+exp15_route_aux,CatBoost,79.0,0.96084 0.95962 0.96141 0.96106 0.96072,0.96072,0.0,0.0,0.0,42,,,2026-10-16 02:55,reused exp10_catboost_cat
+exp15_route_aux,CatBoostFast,79.0,0.96111 0.95995 0.96160 0.96122 0.96095,0.96096,0.00019,5.0,49.1,42,,,2026-10-16 02:55,cpu
+exp15_route_aux,CatBoostOrig,79.0,0.96057 0.95960 0.96106 0.96061 0.96065,0.96049,0.0,0.0,0.0,42,,,2026-10-16 02:55,reused exp13_nn_tuned_cb_orig
+exp15_route_aux,NN,79.0,0.96115 0.95989 0.96149 0.96098 0.96062,0.96081,0.00022,5.0,28.7,42,,,2026-10-16 02:55,mps
+exp15_route_aux,Blend,79.0,0.96168 0.96064 0.96207 0.96161 0.96141,0.96147,0.00018,5.0,0.0,42,"LightGBM 0.26, CatBoost 0.05, CatBoostFast 0.19, CatBoostOrig 0.19, NN 0.31 | refit: LightGBM 5x1325 trees, CatBoost refit from exp10_catboost_cat, CatBoostFast 2x642 trees, CatBoostOrig refit from exp13_nn_tuned_cb_orig, NN 5x15 epochs",,2026-10-16 02:55,
+exp15b_realmlp,Blend,,0.96170 0.96067 0.96211 0.96167 0.96144,0.96151,0.00022,5.0,0.0,42,"LightGBM 0.18, CatBoost 0.02, CatBoostFast 0.16, CatBoostOrig 0.18, NN 0.27, RealMLP 0.20 | LightGBM: exp15_route_aux refit, CatBoost: exp10_catboost_cat refit, CatBoostFast: exp15_route_aux refit, CatBoostOrig: exp13_nn_tuned_cb_orig refit, NN: exp15_route_aux refit, RealMLP: exp15_realmlp_aux2",,2026-10-16 03:43,
+exp15c_10fold,Blend,,0.96174 0.96072 0.96217 0.96172 0.96147,0.96156,0.00027,5.0,0.0,42,"LightGBM 0.24, CatBoost 0.02, CatBoostFast 0.10, CatBoostOrig 0.16, NN 0.24, RealMLP 0.22 | LightGBM: exp15_lgb_k10, CatBoost: exp10_catboost_cat refit, CatBoostFast: exp15_route_aux refit, CatBoostOrig: exp13_nn_tuned_cb_orig refit, NN: exp15_route_aux refit, RealMLP: exp15_realmlp_k10x2 | public_lb is the refit file",0.96132,2026-10-16 03:44,
+exp16_stack_exp15,Stack,254.0,0.96240 0.96142 0.96281 0.96246 0.96209,0.96223,1e-05,3.0,8.4,42,"public+ours, blend family, C 0.003; n_features = stack members; nested OOF",0.96186,2026-10-16 18:59,cpu
+exp17_stack_new_sources,Stack,268.0,0.96239 0.96142 0.96282 0.96246 0.96209,0.96223,1e-05,4.0,8.6,42,"public+ours, blend family, C 0.003; n_features = stack members; nested OOF",,2026-10-16 19:16,cpu
+exp18_stack_tabpfn_ne4,Stack,269.0,0.96240 0.96144 0.96282 0.96245 0.96210,0.96223,1e-05,4.0,9.2,42,"public+ours, blend family, C 0.003; n_features = stack members; nested OOF",,2026-10-24 17:59,cpu
+pick2_public_096213,PublicBlend,,,,,,,,"Final pick 2: goodpjw2008 public_096213_1023.csv, public-LB-tuned blend, no OOF, not CV-validated; pick 1 = exp16_stack_exp15",0.96213,2026-10-24T19:32:31,
